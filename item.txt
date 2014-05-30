@@ -1,0 +1,107 @@
+[
+    {
+        "Vpccode": "SLC",
+        "Itemid": 21277,
+        "Itemdesc": "Menu Boards - Superior Coffee - Menu Board (23.3\"h x 47.5\" w) (Each)"
+    },
+    {
+        "Vpccode": "FFS",
+        "Itemid": 33325,
+        "Itemdesc": "Frank's® RedHot® Branded Hat (Each)"
+    },
+    {
+        "Vpccode": "FFS",
+        "Itemid": 33349,
+        "Itemdesc": "Branded Sun Visor Clips (Each)"
+    },
+    {
+        "Vpccode": "HLFRET",
+        "Itemid": 33645,
+        "Itemdesc": "Sea Cuisine In-Case Card Holder"
+    },
+    {
+        "Vpccode": "FFS",
+        "Itemid": 34732,
+        "Itemdesc": "Frank's® RedHot® Wing Kit Wet Naps (40/Bag)"
+    },
+    {
+        "Vpccode": "HLFFS",
+        "Itemid": 34880,
+        "Itemdesc": "FireRoasters Pop-Up Banner - 33x80 Retractable w/return UPS Label"
+    },
+    {
+        "Vpccode": "HLFFS",
+        "Itemid": 34881,
+        "Itemdesc": "Discover the Viking Difference Pop-Up Banner - 33x80 Retractable w/return UPS Label"
+    },
+    {
+        "Vpccode": "HLFFS",
+        "Itemid": 34904,
+        "Itemdesc": "Hidden Bay Pop-Up Banner - 33x80 w/return UPS Label"
+    },
+    {
+        "Vpccode": "HLFFS",
+        "Itemid": 34905,
+        "Itemdesc": "Portico Pop-Up Banner - 33x80 w/return UPS Label"
+    },
+    {
+        "Vpccode": "HLFFS",
+        "Itemid": 35313,
+        "Itemdesc": "Flame Bowls w/return UPS Label"
+    },
+    {
+        "Vpccode": "HLFRET",
+        "Itemid": 36525,
+        "Itemdesc": "2013 Fisher Boy Lent Poster Easel"
+    },
+    {
+        "Vpccode": "HLFRET",
+        "Itemid": 37691,
+        "Itemdesc": "Fisher Boy Lent Banner"
+    },
+    {
+        "Vpccode": "HLFRET",
+        "Itemid": 37692,
+        "Itemdesc": "Fisher Boy Lent Wrap"
+    },
+    {
+        "Vpccode": "HLFFS",
+        "Itemid": 38372,
+        "Itemdesc": "Table Top Booth w/return UPS label"
+    },
+    {
+        "Vpccode": "FFS",
+        "Itemid": 38486,
+        "Itemdesc": "French's Friends, Family Branded Canvas Tote (Each)"
+    },
+    {
+        "Vpccode": "HLFRET",
+        "Itemid": 39425,
+        "Itemdesc": "Fisher Boy Banner Hanging Hardware"
+    },
+    {
+        "Vpccode": "HLFRET",
+        "Itemid": 40282,
+        "Itemdesc": "Fisher Boy Crunchiest Banner"
+    },
+    {
+        "Vpccode": "HLFRET",
+        "Itemid": 40283,
+        "Itemdesc": "Fisher Boy Crunchiest Wrap"
+    },
+    {
+        "Vpccode": "BARRET",
+        "Itemid": 42821,
+        "Itemdesc": "Barilla Retail Floor Stand"
+    },
+    {
+        "Vpccode": "HLFFS",
+        "Itemid": 42976,
+        "Itemdesc": "Guinness Gear Kit"
+    },
+    {
+        "Vpccode": "BARRET",
+        "Itemid": 43363,
+        "Itemdesc": "Barilla Display Rack"
+    }
+]
