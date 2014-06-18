@@ -43,10 +43,7 @@ Add-Type -AssemblyName presentationframework
             VerticalAlignment="Top"
             Padding="6" BorderBrush="Orange" FontFamily="Consolas" FontSize="12" Background="Black" Foreground="Orange" Opacity="0.75" Focusable="True" IsHitTestVisible="True" />
         <Label 
-            Content="Ping" 
-            Height="35" 
-            HorizontalAlignment="Left" 
-            Name="label1" 
+            Content="Ping" Height="35" HorizontalAlignment="Left" Name="label1" 
             VerticalAlignment="Top" 
             Width="269" 
             FontSize="18" 
@@ -105,7 +102,7 @@ $reader=(New-Object System.Xml.XmlNodeReader $xaml)
 #Load XAML GUI into $form
 $form=[Windows.Markup.XamlReader]::Load( $reader ) 
 
-#Connect objects to form controls
+#Connect objects to form controls(remote controls)
 
 #List Boxes ###################################
 $lstIpconfig = $form.FindName('lstIpconfig')
