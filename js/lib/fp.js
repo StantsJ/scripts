@@ -58,5 +58,123 @@ function greaterOrEqual(x, y) {
   return x >= y;
 }
 
+// Simple illustrative way of parsing CSV
+function lameCSV(str) {
+  return _.reduce(str.split("\n"), function(table, row) {
+    table.push(_.map(row.split(","), function (c) {
+      return c.trim()
+    }));
+    return table;
+  }, []);
+};
+
+// Do an action if the condtion is true
+function doWhen(cond, action) {
+  if(truthy(cond))
+    return action();
+  else
+    return undefined;
+}
+
+// execute only if that objects has that field
+function executeIfHasField(target, name) {
+  return doWhen(existy(target[name]), function () {
+    var result = _.result(target, name);
+    console.log(['The result is', result].join(' '));
+    return result;
+  });
+}
+
+// doubles every number in an array
+function doubleAll(array) {
+  return _.map(array, function (x) { return x*2; });
+}
+
+// averages every number in an array
+function average(array) {
+  var sum = _.reduce(array, function (a, b) { return a+b; });
+  return sum / _.size(array);
+}
+
+// returns only the even numbers
+function onlyEven(array) {
+  return _.filter(array, function (x) {
+    return (x%2) === 0;
+  });
+}
+
+// divied numbers x and way
+function div(x, y) {
+  return x/y;
+}
+
+// Make sure all supplied functions return true
+function allOf(/* funs */) {
+  return _.reduceRight(arguments, function(truth, f) {
+    return truth && f();
+  }, true);
+}
+
+// if only one of the functions returns true, return true
+function anyOf(/* funs */) {
+  return _.reduceRight(arguments, function(truth, f) {
+    return truth || f();
+  }, false);
+}
+
+// True
+function T() { return true; }
+
+// False
+function F() { return false; }
+
+// takes a predicate and returns a function that reverses the sense
+// of the result of said predicate
+function complement(pred) {
+  return function() {
+    return !pred.apply(null, _.toArray(arguments));
+  }
+}
+
+// concats an array
+function cat() {
+  var head = _.first(arguments);
+  if (existy(head))
+    return head.concat.apply(head, _.rest(arguments));
+  else
+    return [];
+}
+
+// takes an element and an array and place the in front of the array
+function construct(head, tail) {
+  return cat([head], _.toArray(tail));
+}
+
+// concats all the elements as the result of map
+function mapcat(fun, coll) {
+  return cat.apply(null, _.map(coll, fun));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
