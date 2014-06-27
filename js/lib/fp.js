@@ -145,7 +145,7 @@ function cat() {
     return [];
 }
 
-// takes an element and an array and place the in front of the array
+// takes an element and an array and place the element in front of the array
 function construct(head, tail) {
   return cat([head], _.toArray(tail));
 }
@@ -155,6 +155,26 @@ function mapcat(fun, coll) {
   return cat.apply(null, _.map(coll, fun));
 }
 
+// takes a table object and returns a new table object based on keys
+// Acts like SQL SELECT
+function project(table, keys) {
+  return _.map(table, function(obj) {
+    return _.pick.apply(null, construct(obj, keys));
+  });
+}
+
+// renames the specified keys in an object
+function rename(obj, newNames) {
+  return _.reduce(newNames, function(o, nu, old) {
+    if (_.has(obj, old)) {
+      o[nu] = obj[old];
+      return o;
+    }
+    else
+      return o;
+  },
+  _.omit.apply(null, construct(obj, _.keys(newNames))));
+};
 
 
 

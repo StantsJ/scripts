@@ -1,4 +1,4 @@
-require('C:/scripts/js/lib/fp.js')
+require('C:/scripts/js/lib/fp.js');
 var _ = require('C:/scripts/js/lib/underscore.js');
 
 function parseAge(age) {
@@ -207,14 +207,31 @@ info
 var creds = _.pick(person, 'token', 'password');
 creds
 
+var library = [{title: "SICP", isbn: "0262010771", ed: 1},
+               {title: "SICP", isbn: "0262510871", ed: 2},
+               {title: "Joy of Clojure", isbn: "1935182641", ed: "1"}];
+
+var a = _.findWhere(library, {title: "SICP", ed: 2});
 
 
+_.where(library, {title: "SICP"});
 
+_.pluck(library, 'title');
+// similar to SELECT title FROM library
 
+a
+construct(a, ['isbn', 'title']);
 
+_.pick.apply(null, construct(a, ['isbn', 'title']));
 
+var editionResults = project(library, ['title', 'isbn']); // SELECT title, isbn FROM library
+editionResults;
 
+var isbnResults = project(editionResults, ['isbn']);
+isbnResults;
+_.pluck(isbnResults, 'isbn');
 
+rename({a: 1, b: 2}, {'a': 'TEST'});
 
 
 
